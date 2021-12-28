@@ -31,6 +31,27 @@ body {
   border-radius: 10px;
 }
 
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(178, 100%, 50%, 0.5);
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  top: 20px;
+  opacity: 0;
+}
+.overlay img {
+  height: 30px;
+  width: 32px;
+  cursor: pointer;
+}
+.overlay:hover {
+  opacity: 1;
+  transition: 0.4s all ease;
+}
 .description {
   display: flex;
   flex-direction: column;
@@ -38,9 +59,15 @@ body {
 }
 
 .desc_title {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.45rem;
+  font-weight: 500;
   padding-top: 0.5rem;
+}
+.desc_title:hover,
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.4s all ease;
+  cursor: pointer;
 }
 .desc_body {
   font-size: 18px;
